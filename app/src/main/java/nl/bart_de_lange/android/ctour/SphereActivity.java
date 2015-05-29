@@ -23,9 +23,9 @@ public class SphereActivity extends Activity implements ConnectionCallbacks,
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mClient = new GoogleApiClient.Builder(this, this, this)
-                .addApi(Panorama.API)
-                .build();
+        Bundle b = getIntent().getExtras();
+        PhotoSphere = b.getInt("photoSphere");
+        mClient = new GoogleApiClient.Builder(this, this, this).addApi(Panorama.API).build();
     }
 
     @Override

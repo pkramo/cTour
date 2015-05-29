@@ -1,7 +1,10 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context="nl.bart_de_lange.android.ctour.MapFragment">
-
-</FrameLayout>
+    <Button android:id="@+id/btnIns1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="INS1"/>
+    <Button android:id="@+id/btnIns2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="INS2"/>
+    <Button android:id="@+id/btnIns3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="INS3"/>
+    <Button android:id="@+id/btnIns4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="INS4"/>
+</LinearLayout>
