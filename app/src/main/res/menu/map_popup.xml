@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+      <item android:id="@+id/show_panorama"
+            android:title="@string/show_panorama"/>
+      <item android:id="@+id/show_info"
+            android:title="@string/show_info"/>
+</menu>  
