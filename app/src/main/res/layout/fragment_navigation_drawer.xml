@@ -19,7 +19,7 @@
                            android:src="@mipmap/ic_launcher"
                            android:adjustViewBounds="true"
                            android:gravity="center"
-                           android:scaleType="fitXY"
+                           android:scaleType="fitCenter"
                            android:layout_gravity="center"/>
             </FrameLayout>
             <FrameLayout android:layout_height="128dp"

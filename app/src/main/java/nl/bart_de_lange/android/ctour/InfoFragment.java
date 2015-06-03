@@ -23,6 +23,4 @@ public class InfoFragment extends Fragment {
 
         return view;
     }
-
-
 }

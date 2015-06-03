@@ -1,5 +1,6 @@
 package nl.bart_de_lange.android.ctour;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
@@ -49,18 +50,21 @@ public class MainActivity extends ActionBarActivity implements DrawerCallbacks {
             case 0:
                 //Plattegrond
                 MapFragment mapFragment = new MapFragment();
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
                 transaction.replace(R.id.fragment_container, mapFragment);
                 transaction.commit();
                 break;
             case 1:
                 //Algemene Informatie
                 InfoFragment infoFragment = new InfoFragment();
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR);
                 transaction.replace(R.id.fragment_container, infoFragment);
                 transaction.commit();
                 break;
             case 2:
                 //Contact
                 ContactFragment contactFragment = new ContactFragment();
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR);
                 transaction.replace(R.id.fragment_container, contactFragment);
                 transaction.commit();
                 break;
