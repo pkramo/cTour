@@ -48,14 +48,21 @@ public class MainActivity extends ActionBarActivity implements DrawerCallbacks {
         switch (position) {
             case 0:
                 //Plattegrond
-                MapFragment mQuizFragment = new MapFragment();
-                transaction.replace(R.id.fragment_container, mQuizFragment);
+                MapFragment mapFragment = new MapFragment();
+                transaction.replace(R.id.fragment_container, mapFragment);
                 transaction.commit();
                 break;
             case 1:
                 //Algemene Informatie
+                InfoFragment infoFragment = new InfoFragment();
+                transaction.replace(R.id.fragment_container, infoFragment);
+                transaction.commit();
+                break;
             case 2:
                 //Contact
+                ContactFragment contactFragment = new ContactFragment();
+                transaction.replace(R.id.fragment_container, contactFragment);
+                transaction.commit();
                 break;
         }
     }
