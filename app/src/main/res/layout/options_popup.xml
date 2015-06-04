@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/popup_element"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:background="@android:color/transparent"
+             android:orientation="vertical">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:id="@+id/outerShadow"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:background="#80000000"
+                 android:paddingTop="25dp"
+                 android:paddingRight="25dp"
+                 android:paddingBottom="50dp"
+                 android:paddingLeft="25dp"
+                 android:orientation="vertical">
+    </FrameLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="320dp"
+                  android:layout_height="wrap_content"
+                  android:background="#ffffff"
+                  android:orientation="vertical"
+                  android:layout_gravity="center">
+
+        <TextView android:id="@+id/pageHeader"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="10dp"
+                  android:textSize="25sp"
+                  android:text="pageHeader"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="#ffffff"
+                      android:orientation="vertical">
+
+            <View android:layout_width="fill_parent"
+                  android:layout_height="2dp"
+                  android:background="#f5f5f5"/>
+
+            <Button android:id="@+id/show_panorama"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="@string/show_panorama"/>
+
+            <View android:layout_width="fill_parent"
+                  android:layout_height="2dp"
+                  android:background="#f5f5f5"/>
+
+            <Button android:id="@+id/show_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="@string/show_info"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:gravity="center_horizontal|bottom">
+
+            <View android:layout_width="fill_parent"
+                  android:layout_height="2dp"
+                  android:background="#f5f5f5"/>
+
+            <Button android:id="@+id/closeButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="@android:string/cancel"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
